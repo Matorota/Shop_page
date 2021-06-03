@@ -16,5 +16,17 @@ namespace Mysql_ir_CSharp
         {
             InitializeComponent();
         }
+
+        private void Button_Add_Click(object sender, EventArgs e)
+        {
+            /*try
+            {
+                string insertQuery = "INSERT INTO Category VALUES(" + TextBox_id.Text + ",'" + TextBox_vardas.Text + "','" + TextBox_aprasymas.Text + "')";
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }*/
+        }
     }
 }
