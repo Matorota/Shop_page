@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Mysql_ir_CSharp
 {
-    public partial class Form1 : Form
+    public partial class ProduktaiForm : Form
     {
-        public Form1()
+        public ProduktaiForm()
         {
             InitializeComponent();
         }
