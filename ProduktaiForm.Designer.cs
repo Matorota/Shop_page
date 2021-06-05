@@ -29,7 +29,16 @@ namespace Mysql_ir_CSharp
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView_product = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button_refresh = new System.Windows.Forms.Button();
+            this.comboBox_search = new System.Windows.Forms.ComboBox();
+            this.Button_Delete = new System.Windows.Forms.Button();
+            this.Button_Update = new System.Windows.Forms.Button();
             this.Button_Add = new System.Windows.Forms.Button();
             this.comboBox_kategorija = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,16 +51,10 @@ namespace Mysql_ir_CSharp
             this.TextBox_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label_exit = new System.Windows.Forms.Label();
-            this.Button_Update = new System.Windows.Forms.Button();
-            this.Button_Delete = new System.Windows.Forms.Button();
-            this.comboBox_kategorijos = new System.Windows.Forms.ComboBox();
-            this.button_refresh = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.button_Pardavejas = new System.Windows.Forms.Button();
             this.button_Kategorijos = new System.Windows.Forms.Button();
             this.button_Parduoti = new System.Windows.Forms.Button();
             this.button_logout = new System.Windows.Forms.Button();
-            this.dataGridView_product = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_product)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +65,7 @@ namespace Mysql_ir_CSharp
             this.panel1.Controls.Add(this.dataGridView_product);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.button_refresh);
-            this.panel1.Controls.Add(this.comboBox_kategorijos);
+            this.panel1.Controls.Add(this.comboBox_search);
             this.panel1.Controls.Add(this.Button_Delete);
             this.panel1.Controls.Add(this.Button_Update);
             this.panel1.Controls.Add(this.Button_Add);
@@ -78,8 +81,133 @@ namespace Mysql_ir_CSharp
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(143, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(824, 535);
+            this.panel1.Size = new System.Drawing.Size(958, 567);
             this.panel1.TabIndex = 0;
+            // 
+            // dataGridView_product
+            // 
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dataGridView_product.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridView_product.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_product.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_product.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_product.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_product.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_product.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridView_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_product.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridView_product.EnableHeadersVisualStyles = false;
+            this.dataGridView_product.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_product.Location = new System.Drawing.Point(310, 80);
+            this.dataGridView_product.Name = "dataGridView_product";
+            this.dataGridView_product.RowHeadersVisible = false;
+            this.dataGridView_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_product.Size = new System.Drawing.Size(635, 475);
+            this.dataGridView_product.TabIndex = 26;
+            this.dataGridView_product.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_product.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_product.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_product.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridView_product.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_product.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_product.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_product.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_product.ThemeStyle.HeaderStyle.Height = 23;
+            this.dataGridView_product.ThemeStyle.ReadOnly = false;
+            this.dataGridView_product.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_product.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_product.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_product.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_product.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView_product.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_product.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_product.Click += new System.EventHandler(this.dataGridView_product_Click_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Snow;
+            this.label6.Location = new System.Drawing.Point(369, 6);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(304, 30);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "valdymo informacinė sistema";
+            // 
+            // button_refresh
+            // 
+            this.button_refresh.FlatAppearance.BorderSize = 0;
+            this.button_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_refresh.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_refresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_refresh.Location = new System.Drawing.Point(836, 39);
+            this.button_refresh.Name = "button_refresh";
+            this.button_refresh.Size = new System.Drawing.Size(109, 36);
+            this.button_refresh.TabIndex = 24;
+            this.button_refresh.Text = "Refresh";
+            this.button_refresh.UseVisualStyleBackColor = true;
+            this.button_refresh.Click += new System.EventHandler(this.button_refresh_Click);
+            // 
+            // comboBox_search
+            // 
+            this.comboBox_search.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_search.FormattingEnabled = true;
+            this.comboBox_search.Items.AddRange(new object[] {
+            "Admin",
+            "Pardavejas"});
+            this.comboBox_search.Location = new System.Drawing.Point(676, 39);
+            this.comboBox_search.Name = "comboBox_search";
+            this.comboBox_search.Size = new System.Drawing.Size(154, 33);
+            this.comboBox_search.TabIndex = 23;
+            this.comboBox_search.Text = "Pasirinkite";
+            this.comboBox_search.SelectionChangeCommitted += new System.EventHandler(this.comboBox_search_SelectionChangeCommitted);
+            // 
+            // Button_Delete
+            // 
+            this.Button_Delete.FlatAppearance.BorderSize = 0;
+            this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Delete.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Button_Delete.Location = new System.Drawing.Point(180, 277);
+            this.Button_Delete.Name = "Button_Delete";
+            this.Button_Delete.Size = new System.Drawing.Size(109, 36);
+            this.Button_Delete.TabIndex = 22;
+            this.Button_Delete.Text = "Delete";
+            this.Button_Delete.UseVisualStyleBackColor = true;
+            this.Button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
+            // 
+            // Button_Update
+            // 
+            this.Button_Update.FlatAppearance.BorderSize = 0;
+            this.Button_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Update.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Update.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Button_Update.Location = new System.Drawing.Point(78, 277);
+            this.Button_Update.Name = "Button_Update";
+            this.Button_Update.Size = new System.Drawing.Size(109, 36);
+            this.Button_Update.TabIndex = 21;
+            this.Button_Update.Text = "Update";
+            this.Button_Update.UseVisualStyleBackColor = true;
+            this.Button_Update.Click += new System.EventHandler(this.Button_Update_Click);
             // 
             // Button_Add
             // 
@@ -106,7 +234,7 @@ namespace Mysql_ir_CSharp
             this.comboBox_kategorija.Name = "comboBox_kategorija";
             this.comboBox_kategorija.Size = new System.Drawing.Size(154, 33);
             this.comboBox_kategorija.TabIndex = 19;
-            this.comboBox_kategorija.Text = "Pasirinkite";
+            this.comboBox_kategorija.Text = "Pasirinkite kategorija";
             // 
             // label5
             // 
@@ -264,74 +392,14 @@ namespace Mysql_ir_CSharp
             this.label_exit.AutoSize = true;
             this.label_exit.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_exit.ForeColor = System.Drawing.Color.Gray;
-            this.label_exit.Location = new System.Drawing.Point(840, 0);
+            this.label_exit.Location = new System.Drawing.Point(1061, 0);
             this.label_exit.Name = "label_exit";
             this.label_exit.Size = new System.Drawing.Size(27, 30);
             this.label_exit.TabIndex = 10;
             this.label_exit.Text = "X";
-            // 
-            // Button_Update
-            // 
-            this.Button_Update.FlatAppearance.BorderSize = 0;
-            this.Button_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Update.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Update.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Button_Update.Location = new System.Drawing.Point(78, 277);
-            this.Button_Update.Name = "Button_Update";
-            this.Button_Update.Size = new System.Drawing.Size(109, 36);
-            this.Button_Update.TabIndex = 21;
-            this.Button_Update.Text = "Update";
-            this.Button_Update.UseVisualStyleBackColor = true;
-            // 
-            // Button_Delete
-            // 
-            this.Button_Delete.FlatAppearance.BorderSize = 0;
-            this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Delete.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Delete.Location = new System.Drawing.Point(180, 277);
-            this.Button_Delete.Name = "Button_Delete";
-            this.Button_Delete.Size = new System.Drawing.Size(109, 36);
-            this.Button_Delete.TabIndex = 22;
-            this.Button_Delete.Text = "Delete";
-            this.Button_Delete.UseVisualStyleBackColor = true;
-            // 
-            // comboBox_kategorijos
-            // 
-            this.comboBox_kategorijos.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_kategorijos.FormattingEnabled = true;
-            this.comboBox_kategorijos.Items.AddRange(new object[] {
-            "Admin",
-            "Pardavejas"});
-            this.comboBox_kategorijos.Location = new System.Drawing.Point(346, 39);
-            this.comboBox_kategorijos.Name = "comboBox_kategorijos";
-            this.comboBox_kategorijos.Size = new System.Drawing.Size(154, 33);
-            this.comboBox_kategorijos.TabIndex = 23;
-            this.comboBox_kategorijos.Text = "Pasirinkite";
-            // 
-            // button_refresh
-            // 
-            this.button_refresh.FlatAppearance.BorderSize = 0;
-            this.button_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_refresh.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_refresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_refresh.Location = new System.Drawing.Point(506, 36);
-            this.button_refresh.Name = "button_refresh";
-            this.button_refresh.Size = new System.Drawing.Size(109, 36);
-            this.button_refresh.TabIndex = 24;
-            this.button_refresh.Text = "Refresh";
-            this.button_refresh.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Snow;
-            this.label6.Location = new System.Drawing.Point(274, 6);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(216, 30);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Management system";
+            this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
+            this.label_exit.MouseEnter += new System.EventHandler(this.label_exit_MouseEnter);
+            this.label_exit.MouseLeave += new System.EventHandler(this.label_exit_MouseLeave);
             // 
             // button_Pardavejas
             // 
@@ -358,6 +426,7 @@ namespace Mysql_ir_CSharp
             this.button_Kategorijos.TabIndex = 27;
             this.button_Kategorijos.Text = "Kategorijos";
             this.button_Kategorijos.UseVisualStyleBackColor = true;
+            this.button_Kategorijos.Click += new System.EventHandler(this.button_Kategorijos_Click);
             // 
             // button_Parduoti
             // 
@@ -384,21 +453,15 @@ namespace Mysql_ir_CSharp
             this.button_logout.TabIndex = 29;
             this.button_logout.Text = "Logout";
             this.button_logout.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView_product
-            // 
-            this.dataGridView_product.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_product.Location = new System.Drawing.Point(281, 78);
-            this.dataGridView_product.Name = "dataGridView_product";
-            this.dataGridView_product.Size = new System.Drawing.Size(504, 436);
-            this.dataGridView_product.TabIndex = 26;
+            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
+            this.button_logout.MouseEnter += new System.EventHandler(this.button_logout_MouseEnter);
+            this.button_logout.MouseLeave += new System.EventHandler(this.button_logout_MouseLeave);
             // 
             // ProduktaiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(949, 554);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.button_logout);
             this.Controls.Add(this.button_Parduoti);
             this.Controls.Add(this.button_Kategorijos);
@@ -411,6 +474,7 @@ namespace Mysql_ir_CSharp
             this.Name = "ProduktaiForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProduktaiForm";
+            this.Load += new System.EventHandler(this.ProduktaiForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_product)).EndInit();
@@ -436,13 +500,13 @@ namespace Mysql_ir_CSharp
         private System.Windows.Forms.Button Button_Add;
         private System.Windows.Forms.Button Button_Delete;
         private System.Windows.Forms.Button Button_Update;
-        private System.Windows.Forms.DataGridView dataGridView_product;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button_refresh;
-        private System.Windows.Forms.ComboBox comboBox_kategorijos;
+        private System.Windows.Forms.ComboBox comboBox_search;
         private System.Windows.Forms.Button button_Pardavejas;
         private System.Windows.Forms.Button button_Kategorijos;
         private System.Windows.Forms.Button button_Parduoti;
         private System.Windows.Forms.Button button_logout;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_product;
     }
 }

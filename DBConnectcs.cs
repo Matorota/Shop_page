@@ -29,7 +29,7 @@ namespace Mysql_ir_CSharp
         {
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                connection.Close(); ;
+                connection.Close(); 
             }
         }
     }
