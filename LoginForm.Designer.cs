@@ -29,7 +29,6 @@ namespace Mysql_ir_CSharp
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,27 +41,12 @@ namespace Mysql_ir_CSharp
             this.comboBox_Rolės = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // guna2CircleButton1
-            // 
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Gold;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.Gold;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(-200, -24);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(418, 456);
-            this.guna2CircleButton1.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Orange;
-            this.label1.Location = new System.Drawing.Point(245, 121);
+            this.label1.Location = new System.Drawing.Point(12, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 30);
             this.label1.TabIndex = 2;
@@ -73,7 +57,7 @@ namespace Mysql_ir_CSharp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Orange;
-            this.label2.Location = new System.Drawing.Point(245, 169);
+            this.label2.Location = new System.Drawing.Point(12, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 30);
             this.label2.TabIndex = 3;
@@ -84,7 +68,7 @@ namespace Mysql_ir_CSharp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(430, 30);
+            this.label3.Location = new System.Drawing.Point(197, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 40);
             this.label3.TabIndex = 4;
@@ -105,7 +89,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_username.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_username.HoverState.Parent = this.TextBox_username;
-            this.TextBox_username.Location = new System.Drawing.Point(379, 121);
+            this.TextBox_username.Location = new System.Drawing.Point(162, 166);
             this.TextBox_username.Name = "TextBox_username";
             this.TextBox_username.PasswordChar = '\0';
             this.TextBox_username.PlaceholderText = "";
@@ -129,7 +113,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_password.HoverState.Parent = this.TextBox_password;
-            this.TextBox_password.Location = new System.Drawing.Point(379, 169);
+            this.TextBox_password.Location = new System.Drawing.Point(162, 214);
             this.TextBox_password.Name = "TextBox_password";
             this.TextBox_password.PasswordChar = '\0';
             this.TextBox_password.PlaceholderText = "";
@@ -148,7 +132,7 @@ namespace Mysql_ir_CSharp
             this.Button_login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_login.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Button_login.HoverState.Parent = this.Button_login;
-            this.Button_login.Location = new System.Drawing.Point(316, 227);
+            this.Button_login.Location = new System.Drawing.Point(168, 250);
             this.Button_login.Name = "Button_login";
             this.Button_login.ShadowDecoration.Parent = this.Button_login;
             this.Button_login.Size = new System.Drawing.Size(180, 45);
@@ -161,7 +145,7 @@ namespace Mysql_ir_CSharp
             this.label_Clear.AutoSize = true;
             this.label_Clear.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Clear.ForeColor = System.Drawing.Color.Orange;
-            this.label_Clear.Location = new System.Drawing.Point(371, 284);
+            this.label_Clear.Location = new System.Drawing.Point(219, 312);
             this.label_Clear.Name = "label_Clear";
             this.label_Clear.Size = new System.Drawing.Size(64, 24);
             this.label_Clear.TabIndex = 8;
@@ -174,8 +158,8 @@ namespace Mysql_ir_CSharp
             // 
             this.label_exit.AutoSize = true;
             this.label_exit.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_exit.ForeColor = System.Drawing.Color.Gray;
-            this.label_exit.Location = new System.Drawing.Point(620, 3);
+            this.label_exit.ForeColor = System.Drawing.Color.Black;
+            this.label_exit.Location = new System.Drawing.Point(398, 9);
             this.label_exit.Name = "label_exit";
             this.label_exit.Size = new System.Drawing.Size(27, 30);
             this.label_exit.TabIndex = 9;
@@ -186,10 +170,10 @@ namespace Mysql_ir_CSharp
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gold;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 165);
+            this.label5.Location = new System.Drawing.Point(160, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(190, 45);
             this.label5.TabIndex = 10;
@@ -202,7 +186,7 @@ namespace Mysql_ir_CSharp
             this.comboBox_Rolės.Items.AddRange(new object[] {
             "Admin",
             "Pardavejas"});
-            this.comboBox_Rolės.Location = new System.Drawing.Point(379, 73);
+            this.comboBox_Rolės.Location = new System.Drawing.Point(168, 118);
             this.comboBox_Rolės.Name = "comboBox_Rolės";
             this.comboBox_Rolės.Size = new System.Drawing.Size(200, 33);
             this.comboBox_Rolės.TabIndex = 11;
@@ -212,7 +196,7 @@ namespace Mysql_ir_CSharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 400);
+            this.ClientSize = new System.Drawing.Size(437, 386);
             this.Controls.Add(this.comboBox_Rolės);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label_exit);
@@ -223,7 +207,6 @@ namespace Mysql_ir_CSharp
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2CircleButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -236,8 +219,6 @@ namespace Mysql_ir_CSharp
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

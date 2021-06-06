@@ -422,7 +422,7 @@ namespace Mysql_ir_CSharp
             this.button_Kategorijos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Kategorijos.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Kategorijos.ForeColor = System.Drawing.Color.Black;
-            this.button_Kategorijos.Location = new System.Drawing.Point(2, 102);
+            this.button_Kategorijos.Location = new System.Drawing.Point(2, 138);
             this.button_Kategorijos.Name = "button_Kategorijos";
             this.button_Kategorijos.Size = new System.Drawing.Size(135, 41);
             this.button_Kategorijos.TabIndex = 27;
@@ -436,7 +436,7 @@ namespace Mysql_ir_CSharp
             this.button_Parduoti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Parduoti.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Parduoti.ForeColor = System.Drawing.Color.Black;
-            this.button_Parduoti.Location = new System.Drawing.Point(2, 174);
+            this.button_Parduoti.Location = new System.Drawing.Point(2, 246);
             this.button_Parduoti.Name = "button_Parduoti";
             this.button_Parduoti.Size = new System.Drawing.Size(135, 41);
             this.button_Parduoti.TabIndex = 28;
