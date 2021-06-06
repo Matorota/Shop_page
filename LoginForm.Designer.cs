@@ -154,6 +154,7 @@ namespace Mysql_ir_CSharp
             this.Button_login.Size = new System.Drawing.Size(180, 45);
             this.Button_login.TabIndex = 7;
             this.Button_login.Text = "Login";
+            this.Button_login.Click += new System.EventHandler(this.Button_login_Click);
             // 
             // label_Clear
             // 
@@ -227,6 +228,7 @@ namespace Mysql_ir_CSharp
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.MouseLeave += new System.EventHandler(this.LoginForm_MouseLeave);
             this.ResumeLayout(false);
             this.PerformLayout();

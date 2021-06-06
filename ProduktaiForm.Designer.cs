@@ -235,6 +235,7 @@ namespace Mysql_ir_CSharp
             this.comboBox_kategorija.Size = new System.Drawing.Size(154, 33);
             this.comboBox_kategorija.TabIndex = 19;
             this.comboBox_kategorija.Text = "Pasirinkite kategorija";
+            this.comboBox_kategorija.SelectedIndexChanged += new System.EventHandler(this.comboBox_kategorija_SelectedIndexChanged);
             // 
             // label5
             // 

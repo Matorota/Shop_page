@@ -199,5 +199,10 @@ namespace Mysql_ir_CSharp
             login.Show();
             this.Hide();
         }
+
+        private void comboBox_kategorija_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

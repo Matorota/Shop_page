@@ -49,7 +49,7 @@ namespace Mysql_ir_CSharp
         private void ParduotiForm1_Load(object sender, EventArgs e)
         {
             label_date.Text = DateTime.Today.ToShortDateString();
-
+            label_pardavejas.Text = LoginForm.SelVardas;
             getCategory();
             getTable();
             getParduotaTable();
@@ -92,6 +92,58 @@ namespace Mysql_ir_CSharp
         private void Button_Print_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_logout_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Hide();
+        }
+
+        private void label_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label_exit_MouseEnter(object sender, EventArgs e)
+        {
+            label_exit.ForeColor = Color.Red; 
+        }
+
+        private void label_exit_MouseLeave(object sender, EventArgs e)
+        {
+            label_exit.ForeColor = Color.Black;
+        }
+
+        private void button_logout_MouseEnter(object sender, EventArgs e)
+        {
+            label_exit.ForeColor = Color.Red;
+        }
+
+        private void button_logout_MouseLeave(object sender, EventArgs e)
+        {
+            label_exit.ForeColor = Color.Black;
+        }
+
+        private void button_refresh_Click(object sender, EventArgs e)
+        {
+            getTable();
+        }
+
+        private void comboBox_kategorija_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox_kategorija_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string selectQuerry = "SELECT Vardas, Kaina FROM Product WHERE Kategorija='" + comboBox_kategorija.SelectedValue.ToString() + "'";
+            MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            DataGridView_produktas.DataSource = table;
         }
 
         private void Button_AddOrder_Click(object sender, EventArgs e)
