@@ -177,6 +177,12 @@
     <Compile Include="PardavejasForm.Designer.cs">
       <DependentUpon>PardavejasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParduotiForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParduotiForm1.Designer.cs">
+      <DependentUpon>ParduotiForm1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProduktaiForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PardavejasForm.resx">
       <DependentUpon>PardavejasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParduotiForm1.resx">
+      <DependentUpon>ParduotiForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProduktaiForm.resx">
       <DependentUpon>ProduktaiForm.cs</DependentUpon>

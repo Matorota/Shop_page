@@ -79,9 +79,9 @@ namespace Mysql_ir_CSharp
             DataTable table = new DataTable();
             adapter.Fill(table);
             comboBox_kategorija.DataSource = table;
-            comboBox_kategorija.ValueMember = "CatName";
+            comboBox_kategorija.ValueMember = "Vardas";
             comboBox_search.DataSource = table;
-            comboBox_search.ValueMember = "CatName";
+            comboBox_search.ValueMember = "Vardas";
         }
 
         private void Button_Update_Click(object sender, EventArgs e)
@@ -94,7 +94,7 @@ namespace Mysql_ir_CSharp
                 }
                 else
                 {
-                    string updateQuery = "UPDATE Product SET ProdName='" + TextBox_vardas.Text + "',ProdPrice=" + TextBox_kaina.Text + ",ProdQty=" + TextBox_kiekis.Text + ",ProdCat='" + comboBox_kategorija.Text + "' WHERE ProdId =" + TextBox_id.Text + "";
+                    string updateQuery = "UPDATE Product SET Vardas='" + TextBox_vardas.Text + "',Kaina=" + TextBox_kaina.Text + ",Kiekis=" + TextBox_kiekis.Text + ",Kategorija='" + comboBox_kategorija.Text + "' WHERE Id =" + TextBox_id.Text + "";
                     MySqlCommand command = new MySqlCommand(updateQuery, dBCon.GetCon());
                     dBCon.OpenCon();
                     command.ExecuteNonQuery();
@@ -130,7 +130,7 @@ namespace Mysql_ir_CSharp
                 }
                 else
                 {
-                    string deleteQuery = "DELETE FROM Product WHERE ProdId=" + TextBox_id.Text + "";
+                    string deleteQuery = "DELETE FROM Product WHERE Id=" + TextBox_id.Text + "";
                     MySqlCommand command = new MySqlCommand(deleteQuery, dBCon.GetCon());
                     dBCon.OpenCon();
                     command.ExecuteNonQuery();
@@ -153,7 +153,7 @@ namespace Mysql_ir_CSharp
 
         private void comboBox_search_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            string selectQuerry = "SELECT * FROM Product WHERE ProdCat='"+comboBox_search.SelectedValue.ToString()+"'";
+            string selectQuerry = "SELECT * FROM Product WHERE Kategorija='" + comboBox_search.SelectedValue.ToString()+"'";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -193,5 +193,11 @@ namespace Mysql_ir_CSharp
             Application.Exit();
         }
 
+        private void button_Pardavejas_Click(object sender, EventArgs e)
+        {
+            PardavejasForm login = new PardavejasForm();
+            login.Show();
+            this.Hide();
+        }
     }
 }

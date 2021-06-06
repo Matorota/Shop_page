@@ -72,7 +72,7 @@ namespace Mysql_ir_CSharp
                     MessageBox.Show("Truksta informacijos", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else { 
-                string updateQuery = " UPDATE Categorys SET CatName='" + TextBox_vardas.Text + "', CatDesc='" + TextBox_aprasymas.Text + "' WHERE CatId=" + TextBox_id.Text + " ";
+                string updateQuery = " UPDATE Categorys SET Vardas='" + TextBox_vardas.Text + "', Aprasymas='" + TextBox_aprasymas.Text + "' WHERE Id=" + TextBox_id.Text + " ";
                 MySqlCommand command = new MySqlCommand(updateQuery, dBCon.GetCon());
                 dBCon.OpenCon();
                 command.ExecuteNonQuery();
@@ -106,7 +106,7 @@ namespace Mysql_ir_CSharp
         {
             try
             {
-                string deleteQuery = "DELETE FROM Categorys WHERE CatId=" + TextBox_id.Text + "";
+                string deleteQuery = "DELETE FROM Categorys WHERE Id=" + TextBox_id.Text + "";
                 MySqlCommand command = new MySqlCommand(deleteQuery, dBCon.GetCon());
                 dBCon.OpenCon();
                 command.ExecuteNonQuery();
@@ -154,9 +154,23 @@ namespace Mysql_ir_CSharp
         }
 
         private void button_produktas_Click(object sender, EventArgs e)
-        {
+        {/*
             ProduktaiForm product = new ProduktaiForm();
             product.Show();
+            this.Hide();*/
+        }
+
+        private void button_Pardavejas_Click(object sender, EventArgs e)
+        {/*
+            PardavejasForm PARDAV = new PardavejasForm();
+            PARDAV.Show();
+            this.Hide();*/
+        }
+
+        private void button_Parduoti_Click(object sender, EventArgs e)
+        {
+            ParduotiForm1 PARDAV = new ParduotiForm1();
+            PARDAV.Show();
             this.Hide();
         }
     }

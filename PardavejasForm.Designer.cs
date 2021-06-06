@@ -38,6 +38,8 @@ namespace Mysql_ir_CSharp
             this.label_exit = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TextBox_password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.dataGridView_pardavejas = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Button_Delete = new System.Windows.Forms.Button();
             this.Button_Update = new System.Windows.Forms.Button();
@@ -50,9 +52,7 @@ namespace Mysql_ir_CSharp
             this.label2 = new System.Windows.Forms.Label();
             this.TextBox_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button_Pardavejas = new System.Windows.Forms.Button();
-            this.TextBox_password = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.button_produktai = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_pardavejas)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +69,9 @@ namespace Mysql_ir_CSharp
             this.button_logout.TabIndex = 35;
             this.button_logout.Text = "Logout";
             this.button_logout.UseVisualStyleBackColor = true;
+            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
+            this.button_logout.MouseEnter += new System.EventHandler(this.button_logout_MouseEnter);
+            this.button_logout.MouseLeave += new System.EventHandler(this.button_logout_MouseLeave);
             // 
             // button_Parduoti
             // 
@@ -82,6 +85,7 @@ namespace Mysql_ir_CSharp
             this.button_Parduoti.TabIndex = 34;
             this.button_Parduoti.Text = "Parduoti";
             this.button_Parduoti.UseVisualStyleBackColor = true;
+            this.button_Parduoti.Click += new System.EventHandler(this.button_Parduoti_Click);
             // 
             // button_Kategorijos
             // 
@@ -95,6 +99,7 @@ namespace Mysql_ir_CSharp
             this.button_Kategorijos.TabIndex = 33;
             this.button_Kategorijos.Text = "Kategorijos";
             this.button_Kategorijos.UseVisualStyleBackColor = true;
+            this.button_Kategorijos.Click += new System.EventHandler(this.button_Kategorijos_Click);
             // 
             // label_exit
             // 
@@ -106,6 +111,9 @@ namespace Mysql_ir_CSharp
             this.label_exit.Size = new System.Drawing.Size(27, 30);
             this.label_exit.TabIndex = 31;
             this.label_exit.Text = "X";
+            this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
+            this.label_exit.MouseEnter += new System.EventHandler(this.label_exit_MouseEnter);
+            this.label_exit.MouseLeave += new System.EventHandler(this.label_exit_MouseLeave);
             // 
             // label6
             // 
@@ -140,6 +148,41 @@ namespace Mysql_ir_CSharp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 567);
             this.panel1.TabIndex = 30;
+            // 
+            // TextBox_password
+            // 
+            this.TextBox_password.BorderRadius = 10;
+            this.TextBox_password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_password.DefaultText = "";
+            this.TextBox_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBox_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBox_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_password.DisabledState.Parent = this.TextBox_password;
+            this.TextBox_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_password.FocusedState.Parent = this.TextBox_password;
+            this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_password.HoverState.Parent = this.TextBox_password;
+            this.TextBox_password.Location = new System.Drawing.Point(121, 224);
+            this.TextBox_password.Name = "TextBox_password";
+            this.TextBox_password.PasswordChar = '\0';
+            this.TextBox_password.PlaceholderText = "";
+            this.TextBox_password.SelectedText = "";
+            this.TextBox_password.ShadowDecoration.Parent = this.TextBox_password;
+            this.TextBox_password.Size = new System.Drawing.Size(154, 30);
+            this.TextBox_password.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Snow;
+            this.label5.Location = new System.Drawing.Point(12, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 30);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Password";
             // 
             // dataGridView_pardavejas
             // 
@@ -197,6 +240,7 @@ namespace Mysql_ir_CSharp
             this.dataGridView_pardavejas.ThemeStyle.RowsStyle.Height = 22;
             this.dataGridView_pardavejas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_pardavejas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_pardavejas.Click += new System.EventHandler(this.dataGridView_pardavejas_Click);
             // 
             // Button_Delete
             // 
@@ -210,6 +254,7 @@ namespace Mysql_ir_CSharp
             this.Button_Delete.TabIndex = 22;
             this.Button_Delete.Text = "Delete";
             this.Button_Delete.UseVisualStyleBackColor = true;
+            this.Button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
             // 
             // Button_Update
             // 
@@ -223,6 +268,7 @@ namespace Mysql_ir_CSharp
             this.Button_Update.TabIndex = 21;
             this.Button_Update.Text = "Update";
             this.Button_Update.UseVisualStyleBackColor = true;
+            this.Button_Update.Click += new System.EventHandler(this.Button_Update_Click);
             // 
             // Button_Add
             // 
@@ -378,53 +424,19 @@ namespace Mysql_ir_CSharp
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
-            // button_Pardavejas
+            // button_produktai
             // 
-            this.button_Pardavejas.FlatAppearance.BorderSize = 0;
-            this.button_Pardavejas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Pardavejas.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Pardavejas.ForeColor = System.Drawing.Color.Black;
-            this.button_Pardavejas.Location = new System.Drawing.Point(1, 35);
-            this.button_Pardavejas.Name = "button_Pardavejas";
-            this.button_Pardavejas.Size = new System.Drawing.Size(135, 41);
-            this.button_Pardavejas.TabIndex = 32;
-            this.button_Pardavejas.Text = "Produktai";
-            this.button_Pardavejas.UseVisualStyleBackColor = true;
-            // 
-            // TextBox_password
-            // 
-            this.TextBox_password.BorderRadius = 10;
-            this.TextBox_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_password.DefaultText = "";
-            this.TextBox_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBox_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBox_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_password.DisabledState.Parent = this.TextBox_password;
-            this.TextBox_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_password.FocusedState.Parent = this.TextBox_password;
-            this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox_password.HoverState.Parent = this.TextBox_password;
-            this.TextBox_password.Location = new System.Drawing.Point(121, 224);
-            this.TextBox_password.Name = "TextBox_password";
-            this.TextBox_password.PasswordChar = '\0';
-            this.TextBox_password.PlaceholderText = "";
-            this.TextBox_password.SelectedText = "";
-            this.TextBox_password.ShadowDecoration.Parent = this.TextBox_password;
-            this.TextBox_password.Size = new System.Drawing.Size(154, 30);
-            this.TextBox_password.TabIndex = 28;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Snow;
-            this.label5.Location = new System.Drawing.Point(12, 224);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 30);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "Password";
+            this.button_produktai.FlatAppearance.BorderSize = 0;
+            this.button_produktai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_produktai.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_produktai.ForeColor = System.Drawing.Color.Black;
+            this.button_produktai.Location = new System.Drawing.Point(1, 35);
+            this.button_produktai.Name = "button_produktai";
+            this.button_produktai.Size = new System.Drawing.Size(135, 41);
+            this.button_produktai.TabIndex = 32;
+            this.button_produktai.Text = "Produktai";
+            this.button_produktai.UseVisualStyleBackColor = true;
+            this.button_produktai.Click += new System.EventHandler(this.button_produktai_Click);
             // 
             // PardavejasForm
             // 
@@ -436,7 +448,7 @@ namespace Mysql_ir_CSharp
             this.Controls.Add(this.button_Kategorijos);
             this.Controls.Add(this.label_exit);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button_Pardavejas);
+            this.Controls.Add(this.button_produktai);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PardavejasForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -470,7 +482,7 @@ namespace Mysql_ir_CSharp
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_id;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button_Pardavejas;
+        private System.Windows.Forms.Button button_produktai;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_password;
         private System.Windows.Forms.Label label5;
     }
