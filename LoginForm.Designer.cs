@@ -45,7 +45,7 @@ namespace Mysql_ir_CSharp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Orange;
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label1.Location = new System.Drawing.Point(12, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 30);
@@ -56,7 +56,7 @@ namespace Mysql_ir_CSharp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Orange;
+            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label2.Location = new System.Drawing.Point(12, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 30);
@@ -67,7 +67,7 @@ namespace Mysql_ir_CSharp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Orange;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(197, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 40);
@@ -128,7 +128,7 @@ namespace Mysql_ir_CSharp
             this.Button_login.BorderRadius = 18;
             this.Button_login.CheckedState.Parent = this.Button_login;
             this.Button_login.CustomImages.Parent = this.Button_login;
-            this.Button_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Button_login.FillColor = System.Drawing.Color.Teal;
             this.Button_login.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_login.ForeColor = System.Drawing.SystemColors.MenuText;
             this.Button_login.HoverState.Parent = this.Button_login;
@@ -144,7 +144,7 @@ namespace Mysql_ir_CSharp
             // 
             this.label_Clear.AutoSize = true;
             this.label_Clear.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Clear.ForeColor = System.Drawing.Color.Orange;
+            this.label_Clear.ForeColor = System.Drawing.Color.Teal;
             this.label_Clear.Location = new System.Drawing.Point(219, 312);
             this.label_Clear.Name = "label_Clear";
             this.label_Clear.Size = new System.Drawing.Size(64, 24);
@@ -173,11 +173,11 @@ namespace Mysql_ir_CSharp
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(160, 9);
+            this.label5.Location = new System.Drawing.Point(-7, -3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(190, 45);
+            this.label5.Size = new System.Drawing.Size(449, 45);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Po Kaštonu";
+            this.label5.Text = "Po Kaštonu valdymo sistema";
             // 
             // comboBox_Rolės
             // 

@@ -29,9 +29,9 @@ namespace Mysql_ir_CSharp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_logout = new System.Windows.Forms.Button();
             this.button_Parduoti = new System.Windows.Forms.Button();
             this.button_Kategorijos = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@ namespace Mysql_ir_CSharp
             this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_logout.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_logout.ForeColor = System.Drawing.Color.Black;
-            this.button_logout.Location = new System.Drawing.Point(1, 518);
+            this.button_logout.Location = new System.Drawing.Point(872, 0);
             this.button_logout.Name = "button_logout";
             this.button_logout.Size = new System.Drawing.Size(135, 41);
             this.button_logout.TabIndex = 35;
@@ -79,11 +79,11 @@ namespace Mysql_ir_CSharp
             this.button_Parduoti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Parduoti.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Parduoti.ForeColor = System.Drawing.Color.Black;
-            this.button_Parduoti.Location = new System.Drawing.Point(1, 217);
+            this.button_Parduoti.Location = new System.Drawing.Point(12, 0);
             this.button_Parduoti.Name = "button_Parduoti";
             this.button_Parduoti.Size = new System.Drawing.Size(135, 41);
             this.button_Parduoti.TabIndex = 34;
-            this.button_Parduoti.Text = "Parduoti";
+            this.button_Parduoti.Text = "Parduotuve";
             this.button_Parduoti.UseVisualStyleBackColor = true;
             this.button_Parduoti.Click += new System.EventHandler(this.button_Parduoti_Click);
             // 
@@ -93,7 +93,7 @@ namespace Mysql_ir_CSharp
             this.button_Kategorijos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Kategorijos.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Kategorijos.ForeColor = System.Drawing.Color.Black;
-            this.button_Kategorijos.Location = new System.Drawing.Point(1, 138);
+            this.button_Kategorijos.Location = new System.Drawing.Point(516, 0);
             this.button_Kategorijos.Name = "button_Kategorijos";
             this.button_Kategorijos.Size = new System.Drawing.Size(135, 41);
             this.button_Kategorijos.TabIndex = 33;
@@ -120,7 +120,7 @@ namespace Mysql_ir_CSharp
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Snow;
-            this.label6.Location = new System.Drawing.Point(369, 6);
+            this.label6.Location = new System.Drawing.Point(449, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(282, 30);
             this.label6.TabIndex = 25;
@@ -144,9 +144,9 @@ namespace Mysql_ir_CSharp
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.TextBox_id);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(142, 33);
+            this.panel1.Location = new System.Drawing.Point(1, 58);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(958, 567);
+            this.panel1.Size = new System.Drawing.Size(1099, 542);
             this.panel1.TabIndex = 30;
             // 
             // TextBox_password
@@ -164,7 +164,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_password.HoverState.Parent = this.TextBox_password;
-            this.TextBox_password.Location = new System.Drawing.Point(121, 224);
+            this.TextBox_password.Location = new System.Drawing.Point(131, 211);
             this.TextBox_password.Name = "TextBox_password";
             this.TextBox_password.PasswordChar = '\0';
             this.TextBox_password.PlaceholderText = "";
@@ -178,7 +178,7 @@ namespace Mysql_ir_CSharp
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Snow;
-            this.label5.Location = new System.Drawing.Point(12, 224);
+            this.label5.Location = new System.Drawing.Point(22, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 30);
             this.label5.TabIndex = 27;
@@ -186,37 +186,37 @@ namespace Mysql_ir_CSharp
             // 
             // dataGridView_pardavejas
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView_pardavejas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridView_pardavejas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_pardavejas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_pardavejas.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_pardavejas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_pardavejas.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView_pardavejas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_pardavejas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_pardavejas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_pardavejas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_pardavejas.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_pardavejas.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_pardavejas.EnableHeadersVisualStyles = false;
             this.dataGridView_pardavejas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_pardavejas.Location = new System.Drawing.Point(310, 80);
+            this.dataGridView_pardavejas.Location = new System.Drawing.Point(310, 65);
             this.dataGridView_pardavejas.Name = "dataGridView_pardavejas";
             this.dataGridView_pardavejas.RowHeadersVisible = false;
             this.dataGridView_pardavejas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_pardavejas.Size = new System.Drawing.Size(635, 475);
+            this.dataGridView_pardavejas.Size = new System.Drawing.Size(786, 490);
             this.dataGridView_pardavejas.TabIndex = 26;
             this.dataGridView_pardavejas.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridView_pardavejas.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -248,7 +248,7 @@ namespace Mysql_ir_CSharp
             this.Button_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Delete.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Delete.Location = new System.Drawing.Point(180, 277);
+            this.Button_Delete.Location = new System.Drawing.Point(190, 264);
             this.Button_Delete.Name = "Button_Delete";
             this.Button_Delete.Size = new System.Drawing.Size(109, 36);
             this.Button_Delete.TabIndex = 22;
@@ -262,7 +262,7 @@ namespace Mysql_ir_CSharp
             this.Button_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Update.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Update.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Button_Update.Location = new System.Drawing.Point(78, 277);
+            this.Button_Update.Location = new System.Drawing.Point(88, 264);
             this.Button_Update.Name = "Button_Update";
             this.Button_Update.Size = new System.Drawing.Size(109, 36);
             this.Button_Update.TabIndex = 21;
@@ -276,7 +276,7 @@ namespace Mysql_ir_CSharp
             this.Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Add.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Add.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Button_Add.Location = new System.Drawing.Point(-17, 277);
+            this.Button_Add.Location = new System.Drawing.Point(-7, 264);
             this.Button_Add.Name = "Button_Add";
             this.Button_Add.Size = new System.Drawing.Size(109, 36);
             this.Button_Add.TabIndex = 20;
@@ -299,7 +299,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_numeris.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_numeris.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_numeris.HoverState.Parent = this.TextBox_numeris;
-            this.TextBox_numeris.Location = new System.Drawing.Point(121, 188);
+            this.TextBox_numeris.Location = new System.Drawing.Point(131, 175);
             this.TextBox_numeris.Name = "TextBox_numeris";
             this.TextBox_numeris.PasswordChar = '\0';
             this.TextBox_numeris.PlaceholderText = "";
@@ -313,7 +313,7 @@ namespace Mysql_ir_CSharp
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(12, 188);
+            this.label4.Location = new System.Drawing.Point(22, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 30);
             this.label4.TabIndex = 16;
@@ -334,7 +334,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_metai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_metai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_metai.HoverState.Parent = this.TextBox_metai;
-            this.TextBox_metai.Location = new System.Drawing.Point(121, 152);
+            this.TextBox_metai.Location = new System.Drawing.Point(131, 139);
             this.TextBox_metai.Name = "TextBox_metai";
             this.TextBox_metai.PasswordChar = '\0';
             this.TextBox_metai.PlaceholderText = "";
@@ -348,7 +348,7 @@ namespace Mysql_ir_CSharp
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(12, 152);
+            this.label3.Location = new System.Drawing.Point(22, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 30);
             this.label3.TabIndex = 14;
@@ -369,7 +369,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_vardas.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_vardas.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_vardas.HoverState.Parent = this.TextBox_vardas;
-            this.TextBox_vardas.Location = new System.Drawing.Point(121, 116);
+            this.TextBox_vardas.Location = new System.Drawing.Point(131, 103);
             this.TextBox_vardas.Name = "TextBox_vardas";
             this.TextBox_vardas.PasswordChar = '\0';
             this.TextBox_vardas.PlaceholderText = "";
@@ -383,7 +383,7 @@ namespace Mysql_ir_CSharp
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(12, 116);
+            this.label2.Location = new System.Drawing.Point(22, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 30);
             this.label2.TabIndex = 12;
@@ -404,7 +404,7 @@ namespace Mysql_ir_CSharp
             this.TextBox_id.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_id.HoverState.Parent = this.TextBox_id;
-            this.TextBox_id.Location = new System.Drawing.Point(121, 80);
+            this.TextBox_id.Location = new System.Drawing.Point(131, 67);
             this.TextBox_id.Name = "TextBox_id";
             this.TextBox_id.PasswordChar = '\0';
             this.TextBox_id.PlaceholderText = "";
@@ -418,7 +418,7 @@ namespace Mysql_ir_CSharp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(12, 80);
+            this.label1.Location = new System.Drawing.Point(22, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 30);
             this.label1.TabIndex = 0;
@@ -430,7 +430,7 @@ namespace Mysql_ir_CSharp
             this.button_produktai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_produktai.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_produktai.ForeColor = System.Drawing.Color.Black;
-            this.button_produktai.Location = new System.Drawing.Point(1, 55);
+            this.button_produktai.Location = new System.Drawing.Point(701, 0);
             this.button_produktai.Name = "button_produktai";
             this.button_produktai.Size = new System.Drawing.Size(135, 41);
             this.button_produktai.TabIndex = 32;

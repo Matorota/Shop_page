@@ -154,17 +154,17 @@ namespace Mysql_ir_CSharp
         }
 
         private void button_produktas_Click(object sender, EventArgs e)
-        {/*
+        {
             ProduktaiForm product = new ProduktaiForm();
             product.Show();
-            this.Hide();*/
+            this.Hide();
         }
 
         private void button_Pardavejas_Click(object sender, EventArgs e)
-        {/*
+        {
             PardavejasForm PARDAV = new PardavejasForm();
             PARDAV.Show();
-            this.Hide();*/
+            this.Hide();
         }
 
         private void button_Parduoti_Click(object sender, EventArgs e)

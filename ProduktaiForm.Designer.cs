@@ -29,9 +29,9 @@ namespace Mysql_ir_CSharp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView_product = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label6 = new System.Windows.Forms.Label();
@@ -79,44 +79,44 @@ namespace Mysql_ir_CSharp
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.TextBox_id);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(143, 33);
+            this.panel1.Location = new System.Drawing.Point(-3, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(958, 567);
+            this.panel1.Size = new System.Drawing.Size(1104, 539);
             this.panel1.TabIndex = 0;
             // 
             // dataGridView_product
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView_product.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGridView_product.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView_product.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_product.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_product.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_product.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView_product.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_product.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_product.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView_product.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_product.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_product.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView_product.EnableHeadersVisualStyles = false;
             this.dataGridView_product.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_product.Location = new System.Drawing.Point(310, 80);
+            this.dataGridView_product.Location = new System.Drawing.Point(281, 78);
             this.dataGridView_product.Name = "dataGridView_product";
             this.dataGridView_product.RowHeadersVisible = false;
             this.dataGridView_product.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_product.Size = new System.Drawing.Size(635, 475);
+            this.dataGridView_product.Size = new System.Drawing.Size(823, 461);
             this.dataGridView_product.TabIndex = 26;
             this.dataGridView_product.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridView_product.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -147,11 +147,11 @@ namespace Mysql_ir_CSharp
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Snow;
-            this.label6.Location = new System.Drawing.Point(326, 6);
+            this.label6.Location = new System.Drawing.Point(388, 2);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(401, 30);
+            this.label6.Size = new System.Drawing.Size(403, 30);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Productu valdymo informacinė sistema";
+            this.label6.Text = "Produktu valdymo informacinė sistema";
             // 
             // button_refresh
             // 
@@ -159,7 +159,7 @@ namespace Mysql_ir_CSharp
             this.button_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_refresh.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_refresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button_refresh.Location = new System.Drawing.Point(836, 39);
+            this.button_refresh.Location = new System.Drawing.Point(958, 35);
             this.button_refresh.Name = "button_refresh";
             this.button_refresh.Size = new System.Drawing.Size(119, 36);
             this.button_refresh.TabIndex = 24;
@@ -174,7 +174,7 @@ namespace Mysql_ir_CSharp
             this.comboBox_search.Items.AddRange(new object[] {
             "Admin",
             "Pardavejas"});
-            this.comboBox_search.Location = new System.Drawing.Point(676, 39);
+            this.comboBox_search.Location = new System.Drawing.Point(776, 35);
             this.comboBox_search.Name = "comboBox_search";
             this.comboBox_search.Size = new System.Drawing.Size(154, 33);
             this.comboBox_search.TabIndex = 23;
@@ -408,7 +408,7 @@ namespace Mysql_ir_CSharp
             this.button_Pardavejas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Pardavejas.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Pardavejas.ForeColor = System.Drawing.Color.Black;
-            this.button_Pardavejas.Location = new System.Drawing.Point(2, 35);
+            this.button_Pardavejas.Location = new System.Drawing.Point(751, 0);
             this.button_Pardavejas.Name = "button_Pardavejas";
             this.button_Pardavejas.Size = new System.Drawing.Size(135, 41);
             this.button_Pardavejas.TabIndex = 26;
@@ -422,7 +422,7 @@ namespace Mysql_ir_CSharp
             this.button_Kategorijos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Kategorijos.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Kategorijos.ForeColor = System.Drawing.Color.Black;
-            this.button_Kategorijos.Location = new System.Drawing.Point(2, 138);
+            this.button_Kategorijos.Location = new System.Drawing.Point(610, -4);
             this.button_Kategorijos.Name = "button_Kategorijos";
             this.button_Kategorijos.Size = new System.Drawing.Size(135, 41);
             this.button_Kategorijos.TabIndex = 27;
@@ -436,11 +436,11 @@ namespace Mysql_ir_CSharp
             this.button_Parduoti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Parduoti.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Parduoti.ForeColor = System.Drawing.Color.Black;
-            this.button_Parduoti.Location = new System.Drawing.Point(2, 246);
+            this.button_Parduoti.Location = new System.Drawing.Point(12, 0);
             this.button_Parduoti.Name = "button_Parduoti";
             this.button_Parduoti.Size = new System.Drawing.Size(135, 41);
             this.button_Parduoti.TabIndex = 28;
-            this.button_Parduoti.Text = "Parduoti";
+            this.button_Parduoti.Text = "Parduotuvė";
             this.button_Parduoti.UseVisualStyleBackColor = true;
             // 
             // button_logout
@@ -449,7 +449,7 @@ namespace Mysql_ir_CSharp
             this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_logout.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_logout.ForeColor = System.Drawing.Color.Black;
-            this.button_logout.Location = new System.Drawing.Point(2, 518);
+            this.button_logout.Location = new System.Drawing.Point(881, 0);
             this.button_logout.Name = "button_logout";
             this.button_logout.Size = new System.Drawing.Size(135, 41);
             this.button_logout.TabIndex = 29;
