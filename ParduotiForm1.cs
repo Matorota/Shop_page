@@ -146,6 +146,20 @@ namespace Mysql_ir_CSharp
             DataGridView_produktas.DataSource = table;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Ar norite iseiti?", "Gerai", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show("Ačiū, kad pirkotės pas mus", "Ate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Ko dar pageidaujate?");
+            }
+        }
+
         private void Button_AddOrder_Click(object sender, EventArgs e)
         {   if (TextBox_vardas.Text == "" || TextBox_kiekis.Text == "")
             {

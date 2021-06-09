@@ -35,7 +35,7 @@ namespace Mysql_ir_CSharp
                 MySqlCommand command = new MySqlCommand(insertQuery, dBCon.GetCon());
                 dBCon.OpenCon();
                 command.ExecuteNonQuery();
-                MessageBox.Show("Produktas pridetas", "Produkto informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Klyjantas pridetas", "Klyjanto informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dBCon.CloseCon();
                 getTable();
                 clear();
@@ -76,7 +76,7 @@ namespace Mysql_ir_CSharp
                     MySqlCommand command = new MySqlCommand(updateQuery, dBCon.GetCon());
                     dBCon.OpenCon();
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Pardavejo UPDATINTAS", "Pardavejo UPDATINIMOSI informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Klyjanto UPDATINTAS", "Klyjanto UPDATINIMOSI informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dBCon.CloseCon();
                     getTable();
                     clear();
@@ -113,7 +113,7 @@ namespace Mysql_ir_CSharp
                     MySqlCommand command = new MySqlCommand(deleteQuery, dBCon.GetCon());
                     dBCon.OpenCon();
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Pardavejo panaikintas", "Pardavejo panaikinta informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Klyjantas panaikintas", "Klyjanto panaikinta informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dBCon.CloseCon();
                     getTable();
                     clear();

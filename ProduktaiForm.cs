@@ -204,5 +204,12 @@ namespace Mysql_ir_CSharp
         {
 
         }
+
+        private void button_Parduoti_Click(object sender, EventArgs e)
+        {
+            ParduotiForm1 login = new ParduotiForm1();
+            login.Show();
+            this.Hide();
+        }
     }
 }
