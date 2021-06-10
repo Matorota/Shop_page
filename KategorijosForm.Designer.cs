@@ -29,9 +29,9 @@ namespace Mysql_ir_CSharp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_Kategorijos = new System.Windows.Forms.Button();
             this.button_produktas = new System.Windows.Forms.Button();
             this.button_Pardavejas = new System.Windows.Forms.Button();
@@ -91,7 +91,7 @@ namespace Mysql_ir_CSharp
             this.button_Pardavejas.Name = "button_Pardavejas";
             this.button_Pardavejas.Size = new System.Drawing.Size(187, 76);
             this.button_Pardavejas.TabIndex = 32;
-            this.button_Pardavejas.Text = "Klijantai";
+            this.button_Pardavejas.Text = "Klientai";
             this.button_Pardavejas.UseVisualStyleBackColor = true;
             this.button_Pardavejas.Click += new System.EventHandler(this.button_Pardavejas_Click);
             // 
@@ -111,7 +111,7 @@ namespace Mysql_ir_CSharp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.dataGridView_kategorija);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.Button_Delete);
@@ -130,37 +130,37 @@ namespace Mysql_ir_CSharp
             // 
             // dataGridView_kategorija
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGridView_kategorija.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView_kategorija.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_kategorija.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_kategorija.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_kategorija.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_kategorija.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView_kategorija.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_kategorija.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_kategorija.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_kategorija.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_kategorija.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_kategorija.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_kategorija.EnableHeadersVisualStyles = false;
             this.dataGridView_kategorija.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_kategorija.Location = new System.Drawing.Point(310, 70);
             this.dataGridView_kategorija.Name = "dataGridView_kategorija";
             this.dataGridView_kategorija.RowHeadersVisible = false;
             this.dataGridView_kategorija.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_kategorija.Size = new System.Drawing.Size(792, 510);
+            this.dataGridView_kategorija.Size = new System.Drawing.Size(792, 501);
             this.dataGridView_kategorija.TabIndex = 26;
             this.dataGridView_kategorija.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.dataGridView_kategorija.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

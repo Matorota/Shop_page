@@ -181,14 +181,14 @@ namespace Mysql_ir_CSharp
             // 
             // comboBox_Rolės
             // 
-            this.comboBox_Rolės.Font = new System.Drawing.Font("Elephant", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_Rolės.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Rolės.FormattingEnabled = true;
             this.comboBox_Rolės.Items.AddRange(new object[] {
             "Admin",
-            "Klijantas"});
+            "Klientai"});
             this.comboBox_Rolės.Location = new System.Drawing.Point(168, 118);
             this.comboBox_Rolės.Name = "comboBox_Rolės";
-            this.comboBox_Rolės.Size = new System.Drawing.Size(200, 33);
+            this.comboBox_Rolės.Size = new System.Drawing.Size(200, 31);
             this.comboBox_Rolės.TabIndex = 11;
             this.comboBox_Rolės.Text = "Pasirinkite";
             // 

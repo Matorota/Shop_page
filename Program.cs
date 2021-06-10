@@ -17,7 +17,6 @@ namespace Mysql_ir_CSharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
-         //   ParduotiForm1
         }
     }
 }

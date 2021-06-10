@@ -40,6 +40,8 @@ namespace Mysql_ir_CSharp
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_logout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.TextBox_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label_kiekisSt = new System.Windows.Forms.Label();
@@ -48,7 +50,6 @@ namespace Mysql_ir_CSharp
             this.DataGridView_Parduotu_sarasas = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button_refresh = new System.Windows.Forms.Button();
             this.comboBox_kategorija = new System.Windows.Forms.ComboBox();
-            this.label_date = new System.Windows.Forms.Label();
             this.label_pardavejas = new System.Windows.Forms.Label();
             this.DataGridView_produktas = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridView_uzsakyti = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -57,7 +58,6 @@ namespace Mysql_ir_CSharp
             this.Kaina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kiekis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label6 = new System.Windows.Forms.Label();
             this.Button_Add = new System.Windows.Forms.Button();
             this.Button_AddOrder = new System.Windows.Forms.Button();
             this.TextBox_kiekis = new Guna.UI2.WinForms.Guna2TextBox();
@@ -66,9 +66,9 @@ namespace Mysql_ir_CSharp
             this.label3 = new System.Windows.Forms.Label();
             this.TextBox_vardas = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label_date = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label_exit = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Parduotu_sarasas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_produktas)).BeginInit();
@@ -119,6 +119,31 @@ namespace Mysql_ir_CSharp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1127, 532);
             this.panel1.TabIndex = 36;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Maroon;
+            this.button1.Location = new System.Drawing.Point(927, 491);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 38);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Baigti pirkinėtis";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Snow;
+            this.label1.Location = new System.Drawing.Point(449, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 30);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Informacija";
             // 
             // TextBox_id
             // 
@@ -270,17 +295,6 @@ namespace Mysql_ir_CSharp
             this.comboBox_kategorija.Text = "Pasirinkite kategorija";
             this.comboBox_kategorija.SelectedIndexChanged += new System.EventHandler(this.comboBox_kategorija_SelectedIndexChanged);
             this.comboBox_kategorija.SelectionChangeCommitted += new System.EventHandler(this.comboBox_kategorija_SelectionChangeCommitted);
-            // 
-            // label_date
-            // 
-            this.label_date.AutoSize = true;
-            this.label_date.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_date.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label_date.Location = new System.Drawing.Point(18, 16);
-            this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(64, 30);
-            this.label_date.TabIndex = 29;
-            this.label_date.Text = "Data:";
             // 
             // label_pardavejas
             // 
@@ -439,17 +453,6 @@ namespace Mysql_ir_CSharp
             this.Total.HeaderText = "Total";
             this.Total.Name = "Total";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label6.Location = new System.Drawing.Point(461, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 30);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "Parduotuvė";
-            // 
             // Button_Add
             // 
             this.Button_Add.FlatAppearance.BorderSize = 0;
@@ -466,7 +469,7 @@ namespace Mysql_ir_CSharp
             // 
             // Button_AddOrder
             // 
-            this.Button_AddOrder.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Button_AddOrder.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Button_AddOrder.FlatAppearance.BorderSize = 0;
             this.Button_AddOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_AddOrder.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -587,6 +590,28 @@ namespace Mysql_ir_CSharp
             this.label2.TabIndex = 12;
             this.label2.Text = "Vardas";
             // 
+            // label_date
+            // 
+            this.label_date.AutoSize = true;
+            this.label_date.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_date.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label_date.Location = new System.Drawing.Point(18, 16);
+            this.label_date.Name = "label_date";
+            this.label_date.Size = new System.Drawing.Size(64, 30);
+            this.label_date.TabIndex = 29;
+            this.label_date.Text = "Data:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label6.Location = new System.Drawing.Point(473, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 30);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Parduotuvė";
+            // 
             // label_exit
             // 
             this.label_exit.AutoSize = true;
@@ -600,31 +625,6 @@ namespace Mysql_ir_CSharp
             this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
             this.label_exit.MouseEnter += new System.EventHandler(this.label_exit_MouseEnter);
             this.label_exit.MouseLeave += new System.EventHandler(this.label_exit_MouseLeave);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Leelawadee UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(449, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 30);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Informacija";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(927, 491);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 38);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Baigti pirkinėtis";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ParduotiForm1
             // 
