@@ -18,7 +18,7 @@ namespace Mysql_ir_CSharp
         {
             InitializeComponent();
         }
-        private void getTable()
+        private void GetTable()
         {
             string selectQuerry = "SELECT Vardas, Kaina FROM Product";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
@@ -27,7 +27,7 @@ namespace Mysql_ir_CSharp
             adapter.Fill(table);
             DataGridView_produktas.DataSource = table;
         }
-        private void getParduotaTable()
+        private void GetParduotaTable()
         {
             string selectQuerry = "SELECT * FROM Bill";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
@@ -36,7 +36,7 @@ namespace Mysql_ir_CSharp
             adapter.Fill(table);
             DataGridView_Parduotu_sarasas.DataSource = table;
         }
-        private void getCategory()
+        private void GetCategory()
         {
             string selectQuerry = "SELECT * FROM Categorys";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
@@ -50,9 +50,9 @@ namespace Mysql_ir_CSharp
         {
             label_date.Text = DateTime.Today.ToShortDateString();
             label_pardavejas.Text = LoginForm.SelVardas;
-            getCategory();
-            getTable();
-            getParduotaTable();
+            GetCategory();
+            GetTable();
+            GetParduotaTable();
         }
 
         private void DataGridView_produktas_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace Mysql_ir_CSharp
                 command.ExecuteNonQuery();
                 MessageBox.Show("uzsakymas pridetas", "uzsakymo informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dBCon.CloseCon();
-                getParduotaTable();
+                GetParduotaTable();
             }
 
             catch (Exception ex)
@@ -128,7 +128,7 @@ namespace Mysql_ir_CSharp
 
         private void button_refresh_Click(object sender, EventArgs e)
         {
-            getTable();
+            GetTable();
         }
 
         private void comboBox_kategorija_SelectedIndexChanged(object sender, EventArgs e)
@@ -158,6 +158,11 @@ namespace Mysql_ir_CSharp
             {
                 MessageBox.Show("Ko dar pageidaujate?");
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void Button_AddOrder_Click(object sender, EventArgs e)

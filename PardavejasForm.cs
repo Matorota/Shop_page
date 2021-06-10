@@ -18,7 +18,7 @@ namespace Mysql_ir_CSharp
             InitializeComponent();
         }
         DBConnectcs dBCon = new DBConnectcs();
-        private void getTable()
+        private void GetTable()
         {
             string selectQuerry = "SELECT * FROM Seller";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
@@ -37,8 +37,8 @@ namespace Mysql_ir_CSharp
                 command.ExecuteNonQuery();
                 MessageBox.Show("Klyjantas pridetas", "Klyjanto informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dBCon.CloseCon();
-                getTable();
-                clear();
+                GetTable();
+                Clear();
             }
 
             catch (Exception ex)
@@ -48,7 +48,7 @@ namespace Mysql_ir_CSharp
             }
         }
 
-        private void clear()
+        private void Clear()
         {
             TextBox_id.Clear();
             TextBox_vardas.Clear();
@@ -58,8 +58,8 @@ namespace Mysql_ir_CSharp
         }
         private void PardavejasForm_Load(object sender, EventArgs e)
         {
-            getTable();
-            clear();
+            GetTable();
+            Clear();
         }
 
         private void Button_Update_Click(object sender, EventArgs e)
@@ -78,8 +78,8 @@ namespace Mysql_ir_CSharp
                     command.ExecuteNonQuery();
                     MessageBox.Show("Klyjanto UPDATINTAS", "Klyjanto UPDATINIMOSI informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dBCon.CloseCon();
-                    getTable();
-                    clear();
+                    GetTable();
+                    Clear();
                 }
             }
             catch (Exception ex)
@@ -115,8 +115,8 @@ namespace Mysql_ir_CSharp
                     command.ExecuteNonQuery();
                     MessageBox.Show("Klyjantas panaikintas", "Klyjanto panaikinta informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dBCon.CloseCon();
-                    getTable();
-                    clear();
+                        GetTable();
+                        Clear();
                 }
                 }
             
@@ -178,6 +178,11 @@ namespace Mysql_ir_CSharp
             ParduotiForm1 kategorijos = new ParduotiForm1();
             kategorijos.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -20,11 +20,11 @@ namespace Mysql_ir_CSharp
         }       
         private void ProduktaiForm_Load(object sender, EventArgs e)
         {
-            getCategory();
-            getTable();
-            clear();
+            GetCategory();
+            GetTable();
+            Clear();
         }
-        private void clear()
+        private void Clear()
         {
             TextBox_id.Clear();
             TextBox_vardas.Clear();
@@ -32,7 +32,7 @@ namespace Mysql_ir_CSharp
             TextBox_kaina.Clear();
             comboBox_kategorija.SelectedIndex = 0;
         }
-        private void getTable()
+        private void GetTable()
         {
             string selectQuerry = "SELECT * FROM Product";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
@@ -45,14 +45,14 @@ namespace Mysql_ir_CSharp
         {
             try
             {
-            string insertQuery = "INSERT INTO Product VALUES(" + TextBox_id.Text + ",'" + TextBox_vardas.Text + "','" + TextBox_kiekis.Text + "','" + TextBox_kaina.Text + "','" + comboBox_kategorija.Text +"')"; // pataisyti
+            string insertQuery = "INSERT INTO Product VALUES(" + TextBox_id.Text + ",'" + TextBox_vardas.Text + "','" + TextBox_kiekis.Text + "','" + TextBox_kaina.Text + "','" + comboBox_kategorija.Text +"')"; 
             MySqlCommand command = new MySqlCommand(insertQuery, dBCon.GetCon());
             dBCon.OpenCon();
             command.ExecuteNonQuery();
             MessageBox.Show("Produktas pridetas", "Produkto informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
             dBCon.CloseCon();
-            getTable();
-            clear();
+                GetTable();
+                Clear();
         }
             
             catch (Exception ex)
@@ -71,7 +71,7 @@ namespace Mysql_ir_CSharp
         }
 
 
-        private void getCategory()
+        private void GetCategory()
         {
             string selectQuerry = "SELECT * FROM Categorys";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
@@ -100,8 +100,8 @@ namespace Mysql_ir_CSharp
                     command.ExecuteNonQuery();
                     MessageBox.Show("Produktas UPDATINTAS", "Produkto UPDATINIMOSI informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dBCon.CloseCon();
-                    getTable();
-                    clear();
+                    GetTable();
+                    Clear();
                 }
             }
             catch (Exception ex)
@@ -136,8 +136,8 @@ namespace Mysql_ir_CSharp
                     command.ExecuteNonQuery();
                     MessageBox.Show("Produktas panaikintas", "Produkto panaikinta informacija", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     dBCon.CloseCon();
-                    getTable();
-                    clear();
+                    GetTable();
+                    Clear();
                 }
             }
             catch (Exception ex)
@@ -148,7 +148,7 @@ namespace Mysql_ir_CSharp
 
         private void button_refresh_Click(object sender, EventArgs e)
         {
-            getTable();
+            GetTable();
         }
 
         private void comboBox_search_SelectionChangeCommitted(object sender, EventArgs e)
@@ -210,6 +210,11 @@ namespace Mysql_ir_CSharp
             ParduotiForm1 login = new ParduotiForm1();
             login.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
